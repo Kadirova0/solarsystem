@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/NGC_1052-DF2_a_ghostly_galaxy_lacking_dark_matter.jpg/800px-NGC_1052-DF2_a_ghostly_galaxy_lacking_dark_matter.jpg);
+}
+.solar-system {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.sun {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sun img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+}
+.planet {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.planet img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orbit {
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 50%;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  animation-name: spin;
+}
+.mercury-orbit {
+  height: 100px;
+  width: 100px;
+}
+.mercury img {
+  height: 37px;
+  width: 37px; 
+  animation: spin 1.5s linear infinite;  
+}
+.venus-orbit {
+    height: 150px;
+    width: 150px;
+}
+.venus img {
+  height: 43px;
+  width: 43px;   
+  animation: spin 3.5s linear infinite;
+}
+.earth-orbit {
+    height: 200px;
+    width: 200px;
+}
+.earth img {
+  height: 45px;
+  width: 45px;   
+  animation: spin 5s linear infinite;
+}
+.mars-orbit {
+    height: 250px;
+    width: 250px;
+}
+.mars img {
+  height: 40px;
+  width: 40px;  
+  animation: spin 7.5s linear infinite; 
+}
+.jupiter-orbit {
+    height: 300px;
+    width: 300px;
+}
+.jupiter img {
+  height: 35px;
+  width: 35px;   
+  animation: spin 26s linear infinite;
+}
+.saturn-orbit {
+    height: 350px;
+    width: 350px;
+}
+.saturn img {
+  height: 33px;
+  width: 33px;   
+  animation: spin 47.5s linear infinite;
+}
+.uran-orbit {
+    height: 400px;
+    width: 400px;
+}
+.uran img {
+  height: 50px;
+  width: 50px;   
+  animation: spin 95s linear infinite;
+}
+.neptune-orbit {
+    height: 450px;
+    width: 450px;
+}
+.neptune img {
+  height: 47px;
+  width: 47px;   
+  animation: spin 7000s linear infinite;
+}
+.pluto-orbit {
+    height: 500px;
+    width: 500px;
+}
+.pluto img {
+  height: 30px;
+  width: 30px;  
+  animation: spin 190s linear infinite;
+}
+
+
+@keyframes spin
+ {
+  from { transform: rotate(0deg) translateX(40px) rotate(0deg);
+   }
+  to { transform: rotate(360deg) translateX(40px) rotate(-360deg); 
+  }
+}
+/* @keyframes spin {
+  from {
+    transform: rotate(0deg) translateX(40px);
+  }
+  to{
+    transform: rotate(360deg) translateX(40px);
+  }
+} */
+
+
+/* @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+} */
+
+
+
